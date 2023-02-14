@@ -1,34 +1,40 @@
 import * as React from "react";
-import "./JobTracking.css";
-import rectangle27 from "../../assets/rectangle27.svg";
-import Button from "react-bootstrap/Button";
+
+import InputComponent from "../../../component/Input";
+import styled from "styled-components";
+
+import styles from "./JobTracking.module.css";
+import ButtonComponent from "../../../component/Button";
+import Layout from "../../../component/Layout";
+
+const Section = styled.section`
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
 const JobTracking = () => {
-  const propsData = {
-    rectangle29: {
-      children: "Button",
-      size: "lg",
-      variant: "outline-danger",
-    },
-  };
   return (
-    <div className="mac-book-air-4">
-      <div className="rectangle-26">
-        <span className="job-tracking-form">JOB TRACKING FORM</span>
-        <span className="full-name">Full Name</span>
-        <img className="rectangle-27" src={rectangle27} />
-        <span className="application-id">Application ID</span>
-        <img className="rectangle-28" src={rectangle27} />
-        <div className="flex-container">
-          <Button
-            className="rectangle-29-instance"
-            {...propsData.rectangle29}
-          />
-          <div className="cat-absolute-container">
-            <span className="submit">Submit</span>
+    <Layout>
+      <Section>
+        <h2 className={styles.Title}>Job Tracking Form</h2>
+        <form className={styles.Form}>
+          <div>
+            <InputComponent label={"Full Name"} />
           </div>
-        </div>
-      </div>
-    </div>
+          <div>
+            <InputComponent label={"Application ID"} />
+          </div>
+          <ButtonComponent
+            label="Submit"
+            compact={true}
+            bg="#039341"
+            color={"#ffffff"}
+          />
+        </form>
+      </Section>
+    </Layout>
   );
 };
 export default JobTracking;

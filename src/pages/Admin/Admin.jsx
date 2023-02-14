@@ -1,51 +1,44 @@
 import * as React from "react";
-import "./Admin.css";
-import FormControl from "react-bootstrap/FormControl";
-import Button from "react-bootstrap/Button";
+
+import InputComponent from "../../../component/Input";
+import styled from "styled-components";
+
+import styles from "../JobTracking/JobTracking.module.css";
+import ButtonComponent from "../../../component/Button";
+import Layout from "../../../component/Layout";
+
+const Section = styled.section`
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
 const Admin = () => {
-  const propsData = {
-    rectangle28: {
-      size: "lg",
-    },
-    rectangle29: {
-      size: "lg",
-    },
-    rectangle27: {
-      active: true,
-      children: "Button",
-      disabled: false,
-      size: "sm",
-      variant: "outline-info",
-    },
-  };
   return (
-    <div className="mac-book-air-4">
-      <div className="rectangle-26">
-        <span className="welcome-admin">Welcome Admin,</span>
-        <span className="enter-your-details">Enter Your Details</span>
-        <span className="email-id">Email ID</span>
-        <FormControl
-          className="rectangle-28-instance"
-          {...propsData.rectangle28}
-          type="text"
-        />
-        <span className="password">Password</span>
-        <FormControl
-          className="rectangle-29-instance"
-          {...propsData.rectangle29}
-          type="text"
-        />
-        <div className="flex-container">
-          <Button
-            className="rectangle-27-instance"
-            {...propsData.rectangle27}
-          />
-          <div className="cat-absolute-container">
-            <span className="login">Login</span>
-          </div>
+    <Layout>
+      <Section>
+        <div>
+          <h2 className={styles.Title}>Welcome Admin</h2>
+          <span className={styles.Info}>Enter your details</span>
         </div>
-      </div>
-    </div>
+        <form className={styles.Form}>
+          <div>
+            <InputComponent label={"Email ID"} />
+          </div>
+          <div>
+            <InputComponent label={"Password"} />
+          </div>
+          <ButtonComponent
+            label="Login"
+            compact={true}
+            bg="#039341"
+            color={"#ffffff"}
+          />
+        </form>
+      </Section>
+    </Layout>
   );
 };
+
 export default Admin;

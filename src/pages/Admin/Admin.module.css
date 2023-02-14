@@ -1,18 +1,19 @@
-.mac-book-air-4 {
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
-    font-family: Inter, Arial;
-    font-size: 1.438rem;
-    font-weight: 700;
-    line-height: 100px;
-    display: flex;
-  }
-  
+.macBookAir4 {
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #641a1ae3;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-family: Inter, Arial;
+  font-size: 1.438rem;
+  font-weight: 700;
+  line-height: 100px;
+  display: flex;
+  border: 1px solid red;
+}
+/*   
   .rectangle-26 {
     height: 100%;
     background-color: #641a1ae3;
@@ -98,4 +99,4 @@
   .login {
     margin-top: 1px;
   }
-  
+   */

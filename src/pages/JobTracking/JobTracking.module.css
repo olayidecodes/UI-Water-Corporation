@@ -1,0 +1,19 @@
+.Title {
+  font-size: 3em;
+}
+
+.Info {
+  display: block;
+  margin: auto;
+  width: fit-content;
+}
+
+.Form {
+  width: 90%;
+  margin: 4em auto;
+  max-width: 600px;
+}
+
+.Form div {
+  margin-bottom: 1.5em;
+}
