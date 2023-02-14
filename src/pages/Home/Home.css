@@ -1,0 +1,49 @@
+.homepage {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(45deg, rgba(197, 197, 197, 0.494), rgba(121, 121, 121, 0.248)), url('../../assets/hdWallpaperG206850.png');
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu span {
+  font-weight: 500;
+  cursor: pointer;
+  color: black;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 75vh;
+  padding: 4rem;
+}
+
+.main h1 {
+  font-size: 3rem;
+  margin-bottom: .7rem;
+  max-width: 40rem;
+}
+
+button {
+  width: 10rem;
+  font-size: 1.3rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem;
+  cursor: pointer;
+}
