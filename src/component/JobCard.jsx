@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonComponent from "./Button";
-import box from "./../src/assets/briefcase11.png";
+import box from "./../assets/briefcase11.png";
 import styled from "styled-components";
 
 const FlexedDiv = styled.div`

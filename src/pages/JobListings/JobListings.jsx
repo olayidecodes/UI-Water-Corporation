@@ -1,8 +1,8 @@
 import * as React from "react";
 import styles from "./JobListings.module.css";
-import Grid from "../../../component/Grid";
-import JobCard from "../../../component/JobCard";
-import Layout from "../../../component/Layout";
+import Grid from "../.././component/Grid";
+import JobCard from "../.././component/JobCard";
+import Layout from "../.././component/Layout";
 import { Box, Skeleton } from "@mui/material";
 
 const JobListings = () => {

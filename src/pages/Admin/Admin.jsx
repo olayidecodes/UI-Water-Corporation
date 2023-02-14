@@ -1,11 +1,11 @@
 import * as React from "react";
 
-import InputComponent from "../../../component/Input";
+import InputComponent from "../.././component/Input";
 import styled from "styled-components";
 
 import styles from "../JobTracking/JobTracking.module.css";
-import ButtonComponent from "../../../component/Button";
-import Layout from "../../../component/Layout";
+import ButtonComponent from "../.././component/Button";
+import Layout from "../.././component/Layout";
 
 const Section = styled.section`
   min-height: 100vh;

@@ -2,7 +2,7 @@ import * as React from "react";
 import styles from "./Home.module.css";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import Navbar from "../../../component/Navbar";
+import Navbar from "../.././component/Navbar";
 const Home = () => {
   // const propsData = {
   //   rectangle2: {

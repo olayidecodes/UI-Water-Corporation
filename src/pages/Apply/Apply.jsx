@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import InputComponent from "../../../component/Input";
+import InputComponent from "../../component/Input";
 
 import styles from "./Apply.module.css";
-import SelectComponent from "../../../component/Select";
-import ButtonComponent from "../../../component/Button";
-import Upload from "../../../component/Upload";
-import Grid from "../../../component/Grid";
-import Layout from "../../../component/Layout";
+import SelectComponent from "../../component/Select";
+import ButtonComponent from "../../component/Button";
+import Upload from "../../component/Upload";
+import Grid from "../../component/Grid";
+import Layout from "../../component/Layout";
 import axios from "axios";
 
 const H3 = styled.h3`
