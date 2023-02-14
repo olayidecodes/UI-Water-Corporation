@@ -17,7 +17,7 @@ const Home = () => {
       <Navbar />
       <div className={styles.main}>
         <h1>Your Surest and Cleanest Water Provider</h1>
-        <button>Contact Us</button>
+        {/* <button>Contact Us</button> */}
       </div>
     </div>
   );
