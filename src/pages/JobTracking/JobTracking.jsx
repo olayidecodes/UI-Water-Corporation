@@ -17,7 +17,6 @@ const Section = styled.section`
 `;
 const JobTracking = () => {
   const [formEntry, setFormEntry] = React.useState({
-    fullname: "",
     applicationId: "",
   });
 
@@ -36,7 +35,7 @@ const JobTracking = () => {
     console.log(formEntry);
 
     // FIX THE API ENDPOINT HERE
-    let res = await axios.post("/api", formEntry);
+    let res = await axios.post("http://0.0.0.0:8080/trackapplication", formEntry);
     let { status } = res.data;
 
     if (status.toLowerCase() === "accepted") {
@@ -56,14 +55,6 @@ const JobTracking = () => {
       <Section>
         <h2 className={styles.Title}>Job Tracking Form</h2>
         <form className={styles.Form} onSubmit={submitHandler}>
-          <div>
-            <InputComponent
-              value={formEntry.fullname}
-              changeHandler={inputHandler}
-              name="fullname"
-              label={"Full Name"}
-            />
-          </div>
           <div>
             <InputComponent
               value={formEntry.applicationId}
