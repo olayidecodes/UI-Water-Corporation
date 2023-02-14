@@ -6,6 +6,7 @@ import styled from "styled-components";
 import styles from "./JobTracking.module.css";
 import ButtonComponent from "../.././component/Button";
 import Layout from "../.././component/Layout";
+import axios from "axios";
 
 const Section = styled.section`
   min-height: 100vh;
