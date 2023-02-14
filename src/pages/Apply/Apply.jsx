@@ -47,7 +47,7 @@ export default function Apply() {
     e.preventDefault();
 
     // FIX THE API ENDPOINT HERE
-    let res = await axios.post("/api", formEntry);
+    let res = await axios.post("/http://0.0.0.0:8080/apply", formEntry);
     let { applicationId } = res.data;
 
     alert(applicationId);
